@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.QuestionDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarQtDetails"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddQtDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button"
+        android:padding="16dp"
+        android:text="Thêm"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddQtDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarQtDetails">
+
+        <EditText
+            android:id="@+id/edittextQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:inputType="textMultiLine"
+            android:maxLines="7"
+            android:lines="5"
+            android:hint="Question" />
+
+        <EditText
+            android:id="@+id/edittextOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:inputType="textPersonName"
+            android:hint="option A" />
+
+        <EditText
+            android:id="@+id/edittextOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:inputType="textPersonName"
+            android:hint="option B" />
+
+        <EditText
+            android:id="@+id/edittextOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:inputType="textPersonName"
+            android:hint="option C" />
+
+        <EditText
+            android:id="@+id/edittextOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:inputType="textPersonName"
+            android:hint="option D" />
+
+        <EditText
+            android:id="@+id/edittextAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:inputType="textPersonName"
+            android:hint="Correct Answer" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
